@@ -1,0 +1,125 @@
+input:focus{
+    outline: none;
+}
+.vertical-line{
+    border: 1px solid lightgray;
+    height:70px;
+}
+.carousel{
+    overflow-x: auto;
+}
+
+.list{
+    white-space: nowrap;
+    display: flex;
+    gap:15px;
+}
+.list > img{
+    display: inline-block;
+    width: 30%;
+}
+
+.carousel::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the scrollbar track */
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the background color of the scrollbar thumb */
+  }
+.items{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+  .item{
+    width: fit-content;
+  }
+  .item-img{
+    width:150px;
+    margin: auto;
+  }
+  .item-name{
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .mins{
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+  .weight-text{
+    font-size: 12px;
+  }
+  .addbtn{
+    position: absolute;
+    bottom: 18px;
+    right: 15px;
+    border:1px solid #3c8f53;
+    background-color:#f7fff9;
+    color:#3c8f53
+  }
+
+  .items::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+  
+  .items::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the scrollbar track */
+  }
+  
+  .items::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the background color of the scrollbar thumb */
+  }
+li{
+    list-style-type: none;
+    width: fit-content;
+    padding: 5px;
+}
+ul{
+    width: fit-content;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+.useful-links{
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.svg{
+    width: 35px;
+    margin-inline: 15px;
+}
+  @media screen and (max-width:768px) {
+    .vertical-line{
+        display:none;
+    }
+    .links{
+        margin-left: 0;
+    }
+    .list{
+        display: block;
+    }
+    .list>img{
+        display: block;
+        margin:10px auto;
+        width:80%;
+
+    }
+    .banner{
+        height:200px;
+    }
+    .banner>img{
+        height:100%;
+        object-fit:inherit;
+    }
+  }
